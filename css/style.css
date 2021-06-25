@@ -1,0 +1,371 @@
+@font-face {
+  font-family: "Cuprum";
+  src: url(/fonts/cuprum.woff) format(woff),
+    url(/fonts/cuprum.woff2) format(woff2);
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Cuprum";
+  src: url(/fonts/cuprumbold.woff) format(woff),
+    url(/fonts/cuprumbold.woff2) format(woff2);
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  src: url(/fonts/ptsans.woff) format(woff),
+    url(/fonts/ptsans.woff2) format(woff2);
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  src: url(/fonts/ptsansbold.woff) format(woff),
+    url(/fonts/ptsansbold.woff2) format(woff2);
+  font-style: normal;
+  font-weight: 700;
+}
+
+:root {
+  --basic-dark: #32425C;
+  --basic-white: #FFFFFF;
+  --basic-extra-dark: #293449;
+  --basic-red: #EE3643;
+  --basic-green: #63A63E;
+  --basic-backgound-1: #888888;
+  --basic-backgound-2: #F1F5F7;
+  --basic-beige:  #F9F5F0;
+  --basic-black: #000000;
+  --basic-yellow: #FFBF47;
+  --basic-light-blue: #3BBCE3;
+  --basic-violet: #DC91D8;
+  --del-gray: #A9A9A9;
+  --special-gold: #FFD180;
+  --modal-background:  #F4F4F4;
+
+}
+
+.page-body {
+  min-width: 1200px;
+  margin: 0;
+  padding: 0;
+  font-family: "Cuprum", "PT Sans", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  background-color: var(--basic-white);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.main-header {
+  background-color: var(--basic-backgound-2);
+}
+
+.header-top {
+  background-color: var(--basic-extra-dark);
+  color: var(--basic-white);
+}
+
+.header-top-link {
+  color: var(--basic-white);
+}
+
+.site-nav, .footer-list, .special-list, .social-list {
+  background-color: var(--basic-dark);
+  list-style: none;
+}
+
+.site-nav-link, .footer-link {
+  color: var(--basic-white);
+  text-align: center;
+}
+
+.site-nav-link:hover, .site-nav-link:focus,
+.footer-link:hover, .footer-link:focus
+{
+  background-color: var(--basic-extra-dark);
+}
+
+.main-nav-description {
+  color: var(--basic-red);
+  font-size: 16px;
+  line-height: 23px;
+}
+
+.logo {
+  background-color: var(--basic-red);
+  display: block;
+}
+
+.header-address {
+  color: var(--basic-dark);
+}
+.header-phone {
+  color:var(--basic-red);
+}
+
+.login-link, .login-reg {
+  font-size: 21px;
+  line-height: 21px;
+  text-align: center;
+  background-color: var(--basic-white);
+  color: var(--basic-black);
+}
+
+.promo-item {
+  font-size: 24px;
+  line-height: 30px;
+  color: var(--basic-white);
+}
+
+.promo-item a {
+  /* display: block; */
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: var(--basic-white);
+  /* background-color: var(--basic-white); */
+}
+
+.promo-item-materials, .promo-item-delivery {
+  background-color: var(--basic-yellow);
+}
+
+.promo-item-tool {
+  background-color: var(--basic-light-blue);
+}
+
+.promo-item-technics {
+  background-color: var(--basic-violet);
+}
+
+.promo-item-sales {
+  background-color: var(--basic-green);
+}
+
+.tools-item-drill {
+  background-image: url("/1653551-technomart-31/img/background/man_with_drill.jpg");
+  background-repeat: no-repeat;
+  width: 620px;
+  height: 266px;
+}
+
+.tools h3 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 36px;
+  margin-left: 24px;
+  text-transform: uppercase;
+  color: var(--basic-white);
+  margin-bottom: 5px;
+  padding-top: 23px;
+}
+
+.tools p {
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--basic-white);
+  margin-left: 24px;
+}
+
+.tools-item-puncher {
+  background-image: url("/1653551-technomart-31/img/background/puncher.jpg");
+  background-repeat: no-repeat;
+  width: 620px;
+  height: 266px;
+}
+
+.tools-catalog {
+  background-color: var(--basic-red);
+  color: var(--basic-white);
+}
+
+.popular-goods, .popular-manifactures {
+  background-color: var(--basic-beige);
+}
+
+.popular-goods h2, .popular-manifactures h2 {
+  color: var(--basic-dark);
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  margin-left: 28px;
+  margin-top: 29px;
+}
+
+.all-popular-goods, .all-popular-manifactures, .credit-link, .contacts-details, .lost-link, .submit {
+  background-color: var(--basic-red);
+  color: var(--basic-white);
+}
+
+.popular-goods-list, .popular-manifactures-list, .services-list, .companies-list {
+  list-style: none;
+}
+
+.popular-goods-item {
+  background-color: var(--basic-white);
+  font-family: "PT-Sans", Arial, sans-serif;
+}
+
+.popular-goods-link {
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+  color: var(--basic-black);
+  text-align: center;
+}
+
+.del {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 18px;
+  text-align: center;
+  color: var(--del-gray);
+}
+
+.red-price {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 18px;
+  text-align: center;
+  color: var(--basic-white);
+  background-color: var(--basic-red);
+  /*Сделать стрелочками*/
+}
+.services {
+  background-color: var(--basic-backgound-2);
+}
+
+.services-name, .services-type-name, .contacts-name {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  margin-left: 125px;
+  padding-top: 57px;
+}
+
+.services-description, .service-type-description, .contacts-description {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  margin-left: 130px;
+}
+
+.services-item .button {
+  margin-left: 130px;
+  width: 240px;
+  height: 61px;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 30px;
+  background-color: var(--basic-dark);
+  color: var(--basic-white);
+}
+
+.services-item .button:hover {
+  background-color: var(--basic-extra-dark);
+}
+
+.services-item .button:focus {
+  background-color: var(--basic-white);
+  color: var(--basic-dark);
+}
+
+.services-type-name {
+  color: var(--basic-dark);
+}
+
+.delivery {
+  background-image: url("/1653551-technomart-31/img/background/bg_delivery.png");
+  background-repeat: no-repeat;
+}
+
+.guarantee {
+  background-image: url("/1653551-technomart-31/img/background/bg_guarantee.png");
+  background-repeat: no-repeat;
+}
+
+.credit {
+  background-image: url("/1653551-technomart-31/img/background/bg_credit.png");
+  background-repeat: no-repeat;
+}
+
+.main-footer, .footer-address {
+  background-color: var(--basic-dark);
+}
+
+.footer-address, .footer-phone, .footer-list {
+  color: var(--basic-white);
+  font-size: 18px;
+  line-height: 24px;
+  font-style: normal;
+}
+
+.special-list-item, .footer-developed-item, .footer-feedback-item {
+  color: var(--special-gold);
+}
+
+.footer-link:hover, .special-list-item:hover, .footer-feedback-item:hover, .footer-developed-item:hover {
+  text-decoration: underline;
+}
+
+.footer-darkside, .social-list {
+  background-color: var(--basic-extra-dark);
+}
+
+.footer-copyright, .footer-feedback, .footer-developed {
+  color: var(--basic-white);
+  font-size: 16px;
+  line-height: 18px;
+}
+
+/* Неудачные на момент попытки поставить иконки соцсетей
+.vk {
+  background-image: url("img/icons/social/vk-icon.svg");
+  width: 44px;
+  height: 44px;
+  position: absolute;
+}
+
+.facebook {
+  background-image: url("img/icons/social/facebook-icon.svg");
+  width: 44px;
+  height: 44px;
+  position: absolute;
+}
+
+.instagram {
+  background-image: url("img/icons/social/instagram-icon.svg");
+  width: 44px;
+  height: 44px;
+  position: absolute;
+}
+*/
+
+.modal {
+  background-color: var(--modal-background);
+}
+
+.modal-form {
+  background-color: var(--basic-white);
+}
+
+.close {
+  background-image: url("/1653551-technomart-31/img/icons/icon-close.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 21px;
+  height: 21px;
+}
