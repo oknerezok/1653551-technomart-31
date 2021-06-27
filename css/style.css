@@ -1,31 +1,31 @@
 @font-face {
   font-family: "Cuprum";
-  src: url(/fonts/cuprum.woff) format(woff),
-    url(/fonts/cuprum.woff2) format(woff2);
+  src: url(../fonts/cuprum.woff2) format(woff2),
+    url(../fonts/cuprum.woff) format(woff);
   font-style: normal;
   font-weight: 400;
 }
 
 @font-face {
   font-family: "Cuprum";
-  src: url(/fonts/cuprumbold.woff) format(woff),
-    url(/fonts/cuprumbold.woff2) format(woff2);
+  src: url(../fonts/cuprumbold.woff2) format(woff2),
+    url(../fonts/cuprumbold.woff) format(woff);
   font-style: normal;
   font-weight: 700;
 }
 
 @font-face {
   font-family: "PT Sans";
-  src: url(/fonts/ptsans.woff) format(woff),
-    url(/fonts/ptsans.woff2) format(woff2);
+  src: url(../fonts/ptsans.woff2) format(woff2),
+    url(../fonts/ptsans.woff) format(woff);
   font-style: normal;
   font-weight: 400;
 }
 
 @font-face {
   font-family: "PT Sans";
-  src: url(/fonts/ptsansbold.woff) format(woff),
-    url(/fonts/ptsansbold.woff2) format(woff2);
+  src: url(../fonts/ptsansbold.woff2) format(woff2),
+    url(../fonts/ptsansbold.woff) format(woff);
   font-style: normal;
   font-weight: 700;
 }
@@ -38,22 +38,29 @@
   --basic-green: #63A63E;
   --basic-backgound-1: #888888;
   --basic-backgound-2: #F1F5F7;
-  --basic-beige:  #F9F5F0;
+  --basic-beige: #F9F5F0;
   --basic-black: #000000;
   --basic-yellow: #FFBF47;
   --basic-light-blue: #3BBCE3;
   --basic-violet: #DC91D8;
   --del-gray: #A9A9A9;
   --special-gold: #FFD180;
-  --modal-background:  #F4F4F4;
+  --modal-background: #F4F4F4;
+  --promo-white: rgba(255, 255, 255, 0.3);
+  --promo-hover: rgba(197, 197, 197, 0.3);
+  --social-icon: #212A3A;
+}
 
+.logo {
+  background-color: var(--basic-red);
+  display: block;
 }
 
 .page-body {
   min-width: 1200px;
   margin: 0;
   padding: 0;
-  font-family: "Cuprum", "PT Sans", Arial, sans-serif;
+  font-family: "Cuprum", Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
   font-weight: 400;
@@ -82,9 +89,14 @@ img {
   color: var(--basic-white);
 }
 
-.site-nav, .footer-list, .special-list, .social-list {
+.site-nav {
   background-color: var(--basic-dark);
+}
+
+.clear-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .site-nav-link, .footer-link {
@@ -104,16 +116,11 @@ img {
   line-height: 23px;
 }
 
-.logo {
-  background-color: var(--basic-red);
-  display: block;
-}
-
 .header-address {
   color: var(--basic-dark);
 }
 .header-phone {
-  color:var(--basic-red);
+  color: var(--basic-red);
 }
 
 .login-link, .login-reg {
@@ -131,12 +138,19 @@ img {
 }
 
 .promo-item a {
-  /* display: block; */
+  display: block;
   font-size: 14px;
   line-height: 18px;
   text-align: center;
+  background-color: var(--promo-white);
   color: var(--basic-white);
-  /* background-color: var(--basic-white); */
+  text-transform: uppercase;
+}
+
+.promo-item a:hover {
+  display: block;
+  background-color: var(--promo-hover);
+  text-transform: uppercase;
 }
 
 .promo-item-materials, .promo-item-delivery {
@@ -156,7 +170,7 @@ img {
 }
 
 .tools-item-drill {
-  background-image: url("../img/background/man_with_drill.jpg");
+  background-image: url("../img/man_with_drill.jpg");
   background-repeat: no-repeat;
   width: 620px;
   height: 266px;
@@ -178,10 +192,12 @@ img {
   line-height: 24px;
   color: var(--basic-white);
   margin-left: 24px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .tools-item-puncher {
-  background-image: url("../img/background/puncher.jpg");
+  background-image: url("../img/puncher.jpg");
   background-repeat: no-repeat;
   width: 620px;
   height: 266px;
@@ -205,7 +221,32 @@ img {
   margin-top: 29px;
 }
 
-.all-popular-goods, .all-popular-manifactures, .credit-link, .contacts-details, .lost-link, .submit {
+.all-popular-goods {
+  background-color: var(--basic-red);
+  color: var(--basic-white);
+}
+
+.all-popular-manifactures {
+  background-color: var(--basic-red);
+  color: var(--basic-white);
+}
+
+.credit-link {
+  background-color: var(--basic-red);
+  color: var(--basic-white);
+}
+
+.contacts-details {
+  background-color: var(--basic-red);
+  color: var(--basic-white);
+}
+
+.lost-link {
+  background-color: var(--basic-red);
+  color: var(--basic-white);
+}
+
+.submit {
   background-color: var(--basic-red);
   color: var(--basic-white);
 }
@@ -227,7 +268,7 @@ img {
   text-align: center;
 }
 
-.del {
+.old-price {
   font-weight: 700;
   font-size: 17px;
   line-height: 18px;
@@ -248,7 +289,7 @@ img {
   background-color: var(--basic-backgound-2);
 }
 
-.services-name, .services-type-name, .contacts-name {
+.heading {
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
@@ -256,14 +297,14 @@ img {
   padding-top: 57px;
 }
 
-.services-description, .service-type-description, .contacts-description {
+.description {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
   margin-left: 130px;
 }
 
-.services-item .button {
+.service-button {
   margin-left: 130px;
   width: 240px;
   height: 61px;
@@ -274,11 +315,11 @@ img {
   color: var(--basic-white);
 }
 
-.services-item .button:hover {
+.service-button:hover {
   background-color: var(--basic-extra-dark);
 }
 
-.services-item .button:focus {
+.service-button:focus {
   background-color: var(--basic-white);
   color: var(--basic-dark);
 }
@@ -288,17 +329,17 @@ img {
 }
 
 .delivery {
-  background-image: url("../img/background/bg_delivery.png");
+  background-image: url("../img/bg_delivery.png");
   background-repeat: no-repeat;
 }
 
 .guarantee {
-  background-image: url("../img/background/bg_guarantee.png");
+  background-image: url("../img/bg_guarantee.png");
   background-repeat: no-repeat;
 }
 
 .credit {
-  background-image: url("../img/background/bg_credit.png");
+  background-image: url("../img/bg_credit.png");
   background-repeat: no-repeat;
 }
 
@@ -331,28 +372,35 @@ img {
   line-height: 18px;
 }
 
-/* Неудачные на момент попытки поставить иконки соцсетей
-.vk {
-  background-image: url("img/icons/social/vk-icon.svg");
+.social-button {
+  display: block;
+  background-color: var(--social-icon);
   width: 44px;
   height: 44px;
-  position: absolute;
+  border-radius: 50%;
 }
 
-.facebook {
-  background-image: url("img/icons/social/facebook-icon.svg");
-  width: 44px;
-  height: 44px;
-  position: absolute;
+.social-button:hover {
+  background-color: var(--basic-red);
+}
+
+.vk {
+  background-image: url("../img/icons/social/vk-icon.svg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.fb {
+  background-image: url("../img/icons/social/facebook-icon.svg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
 }
 
 .instagram {
-  background-image: url("img/icons/social/instagram-icon.svg");
-  width: 44px;
-  height: 44px;
-  position: absolute;
+  background-image: url("../img/icons/social/instagram-icon.svg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
 }
-*/
 
 .modal {
   background-color: var(--modal-background);
@@ -365,7 +413,6 @@ img {
 .close {
   background-image: url("../img/icons/icon-close.svg");
   background-repeat: no-repeat;
-  position: absolute;
   width: 21px;
   height: 21px;
 }
