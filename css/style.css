@@ -118,9 +118,17 @@ img {
 
 .header-address {
   color: var(--basic-dark);
+  font-style: normal;
+  font-size: 14px;
+  list-style: 24px;
 }
+
 .header-phone {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 30px;
   color: var(--basic-red);
+  font-style: normal;
 }
 
 .login-link, .login-reg {
@@ -326,6 +334,7 @@ img {
 .default-footer {
   font-size: 16px;
   line-height: 18px;
+  color: var(--basic-white);
 }
 
 .social-button {
@@ -364,6 +373,7 @@ img {
 
 .modal-form {
   background-color: var(--basic-white);
+  color: var(--basic-black);
 }
 
 .close {
