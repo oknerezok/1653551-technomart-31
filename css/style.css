@@ -49,6 +49,7 @@
   --promo-white: rgba(255, 255, 255, 0.3);
   --promo-hover: rgba(197, 197, 197, 0.3);
   --social-icon: #212A3A;
+  --catalog-beige: #F7F3EC;
 }
 
 .logo {
@@ -197,6 +198,11 @@ img {
   color: var(--basic-white);
 }
 
+.catalog-heading {
+  color: var(--basic-dark);
+  background-color: var(--basic-backgound-2);
+}
+
 .popular-heading {
   color: var(--basic-dark);
 }
@@ -269,7 +275,6 @@ img {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
-  margin-left: 130px;
 }
 
 .service-button {
@@ -382,3 +387,68 @@ img {
   width: 21px;
   height: 21px;
 }
+.private {
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--basic-dark);
+}
+
+.puncher {
+  background-color: var(--basic-backgound-2);
+}
+
+.home {
+  background-image: url("../img/icons/icon-home.svg");
+  background-repeat: no-repeat;
+  display: block;
+  width: 14px;
+  height: 12px;
+}
+
+.breadcrumbs {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.sort {
+  background-color: var(--catalog-beige);
+}
+
+.sort-item {
+  opacity: 0.3;
+  border-bottom: var(--basic-red) dotted;
+}
+
+.current {
+  color: var(--basic-red);
+  opacity: 1;
+  border: none;
+}
+
+.catalog-form {
+  font-family: "PT Sans", Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 15px;
+  line-height: 19px;
+}
+.filter-header {
+  font-family: "PT Sans", Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.pagination {
+  font-family: "PT Sans", Arial, sans-serif;
+  color:var(--basic-black);
+  font-size: 13px;
+  line-height: 18px;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+
+.active-page {
+  background-color: var(--basic-red);
+}
+
