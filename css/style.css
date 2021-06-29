@@ -67,6 +67,9 @@
   font-weight: 400;
   background-color: var(--basic-white);
 }
+.catalog-body {
+  background-color: var(--basic-white);
+}
 
 a {
   text-decoration: none;
@@ -105,9 +108,7 @@ img {
   text-align: center;
 }
 
-.site-nav-link:hover, .site-nav-link:focus,
-.footer-link:hover, .footer-link:focus
-{
+.site-nav-link:hover, .site-nav-link:focus {
   background-color: var(--basic-extra-dark);
 }
 
@@ -189,6 +190,7 @@ img {
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
+  font-weight: 400;
 }
 
 .tools-heading {
@@ -228,7 +230,7 @@ img {
   color: var(--basic-white);
 }
 
-.popular-goods, .popular-manifactures {
+.popular-heading {
   background-color: var(--basic-beige);
 }
 
@@ -239,7 +241,7 @@ img {
 
 .popular-goods-item {
   background-color: var(--basic-white);
-  font-family: "PT-Sans", Arial, sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
 }
 
 .popular-goods-link {
@@ -417,7 +419,7 @@ img {
 
 .sort-item {
   opacity: 0.3;
-  border-bottom: var(--basic-red) dotted;
+  border-bottom: 1px var(--basic-red) dotted;
 }
 
 .current {
@@ -440,7 +442,7 @@ img {
 
 .pagination {
   font-family: "PT Sans", Arial, sans-serif;
-  color:var(--basic-black);
+  color: var(--basic-black);
   font-size: 13px;
   line-height: 18px;
 }
@@ -450,5 +452,6 @@ img {
 
 .active-page {
   background-color: var(--basic-red);
+  color: var(--basic-white);
 }
 
