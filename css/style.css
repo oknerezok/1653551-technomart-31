@@ -57,6 +57,18 @@
   display: block;
 }
 
+.main-header-logo {
+  justify-self: center;
+  padding: 12.78px 56.4px 17.32px 56.78px;
+
+}
+
+.header-top {
+  display: grid;
+  grid-template-columns: 3fr 3fr 2fr 2fr 2fr;
+  grid-template-rows: 47px;
+}
+
 .page-body {
   min-width: 1200px;
   margin: 0;
@@ -67,6 +79,33 @@
   font-weight: 400;
   background-color: var(--basic-white);
 }
+
+.page {
+  height: 100%;
+}
+
+.index-body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+}
+
+.address-and-reg {
+  display: grid;
+  padding-top: 42px;
+  grid-template-columns: 1fr 1fr 121px 150px;
+  grid-template-rows: 47px;
+  height: 158px;
+}
+
+.site-nav-list {
+  display: grid;
+  grid-template-columns: 1fr min-content;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
 .catalog-body {
   background-color: var(--basic-white);
 }
@@ -87,14 +126,24 @@ img {
 .header-top {
   background-color: var(--basic-extra-dark);
   color: var(--basic-white);
+  height: 42px;
 }
 
 .header-top-link {
   color: var(--basic-white);
+  justify-self: center;
+  margin-top: 9px;
+}
+
+.header-search {
+  justify-self: center;
+  margin-top: 9px;
 }
 
 .site-nav {
   background-color: var(--basic-dark);
+  margin: 0;
+  padding: 0;
 }
 
 .clear-list {
@@ -112,10 +161,16 @@ img {
   background-color: var(--basic-extra-dark);
 }
 
+.main-nav {
+  display: grid;
+}
+
 .main-nav-description {
   color: var(--basic-red);
   font-size: 16px;
   line-height: 23px;
+  margin-left: 160px;
+  vertical-align: center;
 }
 
 .header-address {
@@ -141,10 +196,44 @@ img {
   color: var(--basic-black);
 }
 
+.promo {
+  display: grid;
+  grid-template-areas:
+    "material tool technic"
+    ". . sale"
+    ". . delivery";
+    gap: 20px;
+    text-align: left;
+    margin-left: 130px;
+    margin-right: 130px;
+    margin-top: 120px;
+}
+
 .promo-item {
   font-size: 24px;
   line-height: 30px;
   color: var(--basic-white);
+  width: 300px;
+  height: 123px;
+}
+
+.promo-item-materials {
+  grid-area: material;
+}
+
+.promo-item-tool {
+  grid-area: tool;
+}
+
+.promo-item-technics {
+  grid-area: technic;
+}
+
+.promo-item-sales {
+  grid-area: sale;
+}
+.promo-item-delivery {
+  grid-area: delivery;
 }
 
 .promo-link {
@@ -239,7 +328,15 @@ img {
   color: var(--basic-white);
 }
 
+.popular-goods-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: 0;
+  padding: 0;
+}
+
 .popular-goods-item {
+  display: block;
   background-color: var(--basic-white);
   font-family: "PT Sans", Arial, sans-serif;
 }
@@ -269,6 +366,15 @@ img {
   background-color: var(--basic-red);
   /*Сделать стрелочками*/
 }
+
+.popular-manifactures-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  margin: 0;
+  padding: 0;
+}
+
 .services {
   background-color: var(--basic-backgound-2);
 }
@@ -316,6 +422,12 @@ img {
 .credit {
   background-image: url("../img/bg_credit.png");
   background-repeat: no-repeat;
+}
+
+.contacts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 70px;
 }
 
 .main-footer, .footer-address {
@@ -455,3 +567,28 @@ img {
   color: var(--basic-white);
 }
 
+.first-footer {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 3fr auto;
+  grid-template-rows: auto auto;
+}
+
+.footer-logo {
+  width: 136.5px;
+  height: 21.6px;
+  padding: 21px 41.51px 25.4px 41.99px;
+  margin-left: 130px;
+}
+
+.footer-darkside {
+  display: grid ;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.footer-darkside p {
+  margin-left: 130px;
+  margin-top: 36px;
+  margin-bottom: 34px;
+  margin-right: auto;
+}
