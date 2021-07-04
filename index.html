@@ -13,7 +13,7 @@
   <body class="page-body index-body">
     <header class="main-header">
       <div class="header-top">
-        <div class="header-1 container clearfix">
+        <div class="header-menu container">
           <a class="logo header-logo">
             <img src="img/logo-technomart.svg" width="107" height="17" alt="Логотип магазина Техномарт">
           </a>
@@ -26,20 +26,20 @@
           <a class="header-top-link" href="blank.html">Оформить заказ</a>
         </div>
       </div>
-      <div class="header-2 container clearfix">
+      <div class="header-center container">
         <p class="main-nav-description">Интернет-магазин<br>строительных материалов<br>и инструментов для ремонта</p>
         <address class="header-address">
           <a class="header-phone" href="tel:78005558628">+7 (800) 555-86-28</a><br>
           г. Санкт-Петербург, наб. Реки Карповки, 5 лит П
         </address>
-        <div class="enter">
+        <div class="login">
           <a class="login-link" href="blank.html">Войти</a>
         </div>
-        <div class="reg">
+        <div class="registration">
           <a class="login-reg" href="blank.html">Регистрация</a>
         </div>
       </div>
-      <div class="header-3 container clearfix">
+      <div class="header-nav container">
         <ul class="site-nav clear-list">
           <li>
             <a class="site-nav-link">Главная</a>
@@ -67,7 +67,7 @@
     </header>
     <main>
       <!--<h1>Главная страница интернет-магазина Техномарт</h1>-->
-      <section class="promo container clearfix">
+      <section class="promo container">
         <!--<h2>Промо</h2>-->
         <div class="promo-item promo-item-materials">
           <h3>Материалы</h3>
@@ -81,6 +81,18 @@
           <h3>Техника</h3>
           <a class="promo-link" href="blank.html">для стройки</a>
         </div>
+        <!--<h2>Тут будет слайдер</h2>-->
+        <div class="tools-item tools-item-drill">
+          <h3 class="heading tools-heading">Дрели</h3>
+          <p class="tools-p">Соседям на радость!</p>
+        </div>
+        <div class="tools-item tools-item-puncher container">
+          <h3 class="heading tools-heading">Перфораторы</h3>
+          <p class="tools-p">Настоящие мужские игрушки</p>
+        </div>
+        <!--Надо будет добавить в сам слайдер
+          <a class="tools-catalog" href="catalog.html">Открыть каталог</a>
+        -->
         <div class="promo-item promo-item-sales">
           <h3>Скидки 50%</h3>
           <a class="promo-link" href="blank.html">На 350 товаров</a>
@@ -90,24 +102,10 @@
           <a class="promo-link" href="blank.html">Бесплатно</a>
         </div>
       </section>
-      <section class="tools container clearfix">
-        <!--<h2>Тут будет слайдер</h2>-->
-        <div class="tools-item tools-item-drill">
-          <h3 class="heading tools-heading">Дрели</h3>
-          <p class="tools-p">Соседям на радость!</p>
-          <!--Тут будет <ins>фоновая</ins> картинка рабочего с дрелью-->
-        </div>
-        <div class="tools-item tools-item-puncher">
-          <h3 class="heading tools-heading">Перфораторы</h3>
-          <p class="tools-p">Настоящие мужские игрушки</p>
-          <!--Тут будет <ins>фоновая</ins> картинка рабочего с перфоратором-->
-        </div>
-        <a class="tools-catalog" href="catalog.html">Открыть каталог</a> <!--А тут красненькая плашечка из макета <ins>через CSS</ins>-->
-      </section>
-      <section class="popular-goods container clearfix">
+      <section class="popular-goods container ">
         <h2 class="heading popular-heading">Популярные товары</h2>
         <a class="all-popular-goods red-and-white" href="blank.html">Все популярные товары</a>
-        <div class="goods-list container clearfix">
+        <div class="goods-list container">
           <ul class="popular-goods-list clear-list">
             <li class="popular-goods-item">
               <a class="popular-goods-link" href="blank.html">Перфоратор BOSCH BFG 9000</a>
@@ -144,10 +142,10 @@
           </ul>
         </div>
       </section>
-      <section class="popular-manifactures container clearfix">
+      <section class="popular-manifactures container">
         <h2 class="heading popular-heading">Популярные производители</h2>
         <a class="all-popular-manifactures red-and-white" href="blank.html">Все популярные производители</a>
-        <div class="manifactures-list container clearfix">
+        <div class="manifactures-list container">
           <ul class="popular-manifactures-list clear-list">
             <li class="popular-manifactures-item">
               <a href="blank.html">
@@ -193,7 +191,7 @@
         </div>
       </section>
       <section class="services">
-        <div class="container clearfix">
+        <div class="container">
           <div class="services-top">
             <h2 class="heading service-heading">Сервисы</h2>
             <!--Ещё один слайдер-->
@@ -242,7 +240,7 @@
       </div>
     </div>
       </section>
-      <div class="contacts container clearfix">
+      <div class="contacts container">
         <!--<h2>Адрес и контакты</h2>-->
         <div class="contacts-1">
           <h3 class="heading contacts-heading">Компания Техномарт</h3>
@@ -276,8 +274,8 @@
       </div>
     </main>
     <footer class="main-footer">
-      <div class="footer-1">
-        <div class="container clearfix">
+      <div class="footer-light">
+        <div class="container">
           <div class="footer-navigation">
             <a class="logo footer-logo">
               <img src="img/logo-technomart.svg" width="137" height="22" alt="Логотип магазина Техномарт">
@@ -321,7 +319,7 @@
         </div>
       </div>
       <div class="footer-darkside">
-        <div class="footer-2 container clearfix">
+        <div class="footer-dark container">
           <p class="footer-copyright default-footer">© 2010–2021 Компания «Техномарт»<br>
             Все права защищены
           </p>
