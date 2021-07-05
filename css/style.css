@@ -50,6 +50,7 @@
   --promo-hover: rgba(197, 197, 197, 0.3);
   --social-icon: #212A3A;
   --catalog-beige: #F7F3EC;
+  --basic-border: #EAEAEA;
 }
 
 .container {
@@ -72,17 +73,32 @@
   display: block;
 }
 
+.header-top-item {
+  padding-top: 9px;
+  padding-bottom: 9px;
+}
+
 .header-logo {
   width: 107px;
   height: 17px;
   padding: 13px 56px 17px 57px;
-  margin-right: 17px;
+  margin-bottom: -5px;
 }
 
-.search, .header-top-link {
-  justify-self: center;
+.search {
+  margin-left: 21px;
   padding-top: 9px;
   padding-bottom: 9px;
+}
+
+.basket {
+  background-color: var(--basic-red);
+  padding-left: 47px;
+}
+
+.place-order {
+  background-color: var(--basic-green);
+  padding-left: 19px;
 }
 
 .header-center {
@@ -90,10 +106,13 @@
   grid-template-columns: auto auto auto auto;
 }
 
-
+.catalog-header-center {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
 
 .page-body {
-  min-width: 1200px;
+  min-width: 940px;
   margin: 0;
   padding: 0;
   font-family: "Cuprum", Arial, sans-serif;
@@ -185,13 +204,27 @@ img {
   font-style: normal;
 }
 
-.login-link, .login-reg {
+.login-link, .login-reg, .person-link {
   font-size: 21px;
   line-height: 21px;
   text-align: center;
   background-color: var(--basic-white);
   color: var(--basic-black);
 }
+
+.personal {
+  background-color: var(--basic-white);
+  margin-top: 46px;
+  margin-bottom: 7px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.person {
+  padding-left: 21px;
+  padding-right: 20px;
+}
+
 .login {
   margin-top: 46px;
   margin-bottom: 67px;
@@ -291,6 +324,43 @@ img {
 .catalog-heading {
   color: var(--basic-dark);
   background-color: var(--basic-backgound-2);
+  padding-top: 29px;
+  padding-bottom: 30px;
+  padding-left: 29px;
+}
+
+.catalog-filters {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  align-content: start;
+}
+
+.filter {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 18px;
+  margin-top: 20px;
+}
+
+.show {
+  margin-top: 24px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 220px;
+}
+
+.pagination-list {
+  margin-left: 20px;
+}
+
+.catalog-cards {
+  margin-left: 20px;
+  margin-top: 28px;
+  margin-bottom: 48px;
+  display: grid;
+  grid-template-columns: 220px 220px 220px;
+  column-gap: 20px;
+  row-gap: 18px;;
 }
 
 .popular-heading {
@@ -358,6 +428,8 @@ img {
   background-color: var(--basic-white);
   font-family: "PT Sans", Arial, sans-serif;
   justify-self: center;
+  box-sizing: border-box ;
+  border: 1px solid var(--basic-border);
 }
 
 .popular-goods-link {
@@ -450,6 +522,11 @@ img {
   padding-bottom: 70px;
 }
 
+.middle {
+  padding-top: 21px;
+  padding-bottom: 59px;
+}
+
 .main-footer, .footer-address, .footer-phone {
   color: var(--basic-white);
   font-size: 18px;
@@ -536,6 +613,8 @@ img {
 
 .puncher {
   background-color: var(--basic-backgound-2);
+  padding-top: 64px;
+  padding-bottom: 68px;
 }
 
 .home {
