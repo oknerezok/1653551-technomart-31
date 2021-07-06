@@ -47,25 +47,25 @@
       </div>
       <div class="header-nav container">
         <ul class="site-nav clear-list">
-          <li>
+          <li class="site-nav-item">
             <a class="site-nav-link">Главная</a>
           </li>
-          <li>
+          <li class="site-nav-item">
             <a class="site-nav-link" href="blank.html">Компания</a>
           </li>
-          <li>
+          <li class="site-nav-item">
             <a class="site-nav-link" href="catalog.html">Каталог</a>
           </li>
-          <li>
+          <li class="site-nav-item">
             <a class="site-nav-link" href="blank.html">Новости</a>
           </li>
-          <li>
+          <li class="site-nav-item">
             <a class="site-nav-link" href="blank.html">Спецпредложения</a>
           </li>
-          <li>
+          <li class="site-nav-item">
             <a class="site-nav-link" href="blank.html">Доставка</a>
           </li>
-          <li>
+          <li class="site-nav-item"i>
             <a class="site-nav-link" href="blank.html">Контакты</a>
           </li>
         </ul>
@@ -76,41 +76,51 @@
       <section class="promo container">
         <!--<h2>Промо</h2>-->
         <div class="promo-item promo-item-materials">
-          <h3>Материалы</h3>
-          <a class="promo-link" href="blank.html">на любой вкус</a>
+          <p class="promo-p">Материалы</p>
+          <div class="promo-feature">
+            <a class="promo-link" href="blank.html">на любой вкус</a>
+          </div>
         </div>
         <div class="promo-item promo-item-tool">
-          <h3>Инструменты</h3>
-          <a class="promo-link" href="blank.html">на все случаи</a>
+          <p class="promo-p">Инструменты</p>
+          <div class="promo-feature">
+            <a class="promo-link" href="blank.html">на все случаи</a>
+          </div>
         </div>
         <div class="promo-item promo-item-technics">
-          <h3>Техника</h3>
-          <a class="promo-link" href="blank.html">для стройки</a>
+          <p class="promo-p">Техника</p>
+          <div class="promo-feature">
+            <a class="promo-link" href="blank.html">для стройки</a>
+          </div>
         </div>
         <!--<h2>Тут будет слайдер</h2>-->
         <div class="tools-item tools-item-drill">
-          <h3 class="heading tools-heading">Дрели</h3>
+          <p class="heading tools-heading">Дрели</p>
           <p class="tools-p">Соседям на радость!</p>
         </div>
         <div class="tools-item tools-item-puncher container">
-          <h3 class="heading tools-heading">Перфораторы</h3>
+          <p class="heading tools-heading">Перфораторы</p>
           <p class="tools-p">Настоящие мужские игрушки</p>
         </div>
         <!--Надо будет добавить в сам слайдер
           <a class="tools-catalog" href="catalog.html">Открыть каталог</a>
         -->
         <div class="promo-item promo-item-sales">
-          <h3>Скидки 50%</h3>
-          <a class="promo-link" href="blank.html">На 350 товаров</a>
-        </div>
+          <p class="promo-p">Скидки 50%</p>
+          <div class="promo-feature">
+            <a class="promo-link" href="blank.html">На 350 товаров</a></div>
+          </div>
         <div class="promo-item promo-item-delivery">
-          <h3>Доставка</h3>
-          <a class="promo-link" href="blank.html">Бесплатно</a>
-        </div>
+          <p class="promo-p">Доставка</p>
+          <div class="promo-feature">
+            <a class="promo-link" href="blank.html">Бесплатно</a></div>
+          </div>
       </section>
       <section class="popular-goods container ">
-        <h2 class="heading popular-heading">Популярные товары</h2>
-        <a class="all-popular-goods red-and-white" href="blank.html">Все популярные товары</a>
+        <div class="popular-heading-block">
+          <p class="heading popular-heading">Популярные товары</p>
+          <a class="all-popular-goods red-and-white" href="blank.html">Все популярные товары</a>
+        </div>
         <div class="goods-list container">
           <ul class="popular-goods-list clear-list">
             <li class="popular-goods-item">
@@ -149,8 +159,10 @@
         </div>
       </section>
       <section class="popular-manifactures container">
-        <h2 class="heading popular-heading">Популярные производители</h2>
-        <a class="all-popular-manifactures red-and-white" href="blank.html">Все популярные производители</a>
+        <div class="popular-heading-block">
+          <p2 class="heading popular-heading">Популярные производители</p2>
+          <a class="all-popular-manifactures red-and-white" href="blank.html">Все производители</a>
+        </div>
         <div class="manifactures-list container">
           <ul class="popular-manifactures-list clear-list">
             <li class="popular-manifactures-item">
@@ -206,45 +218,47 @@
               Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
             </p>
           </div>
-        <ul class="services-list clear-list">
-          <li class="services-item">
-            <button class="button service-button" type='button' autofocus>Доставка</button>
-          </li>
-          <li class="services-item">
-            <button class="button service-button" type='button'>Гарантия</button>
-          </li>
-          <li class="services-item">
-            <button class="button service-button" type='button'>Кредит</button>
-          </li>
-        </ul>
-      <div class="service delivery">
-        <h3 class="heading serice-heading services-type-name">Доставка</h3>
-        <p class="service-type-description description">
-          Мы с удовольствием доставим ваш товар прямо <br>
-          к вашему подъезду совершенно бесплатно!<br>
-          Ведь мы неплохо заработаем, <br>
-          поднимая его на ваш этаж!
-        </p>
-      </div>
-      <div class="service-type guarantee">
-        <h3 class="heading service-heading services-type-name">Гарантия</h3>
-        <p class="service-type-description description">
-          Если купленный у нас товар поломается или заискрит, <br>
-          а также в случае пожара, спровоцированного его возгоранием,
-          <br>вы всегда можете быть уверены в нашей гарантии. <br>
-          Мы обменяем сгоревший товар на новый. <br>
-          Дом уж восстановите как-нибудь сами.
-        </p>
-      </div>
-      <div class="service-type credit">
-        <h3 class="heading service-heading services-type-name">Кредит</h3>
-        <p class="service-type-description description">
-          Залезть в долговую яму стало проще!<br>
-          Кредитные консультанты придут вам на помощь.
-        </p>
-        <a class="credit-link red-and-white" href="blank.html">Отправить заявку</a>
-      </div>
-    </div>
+          <div class="services-block">
+            <ul class="services-list clear-list">
+              <li class="services-item">
+                <button class="button service-button" type="button" autofocus>Доставка</button>
+              </li>
+              <li class="services-item">
+                <button class="button service-button" type="button">Гарантия</button>
+              </li>
+              <li class="services-item">
+                <button class="button service-button" type="button">Кредит</button>
+              </li>
+            </ul>
+            <div class="service-type delivery">
+              <h3 class="heading serice-heading services-type-name">Доставка</h3>
+              <p class="service-type-description description">
+                Мы с удовольствием доставим ваш товар прямо <br>
+                к вашему подъезду совершенно бесплатно!<br>
+                Ведь мы неплохо заработаем, <br>
+                поднимая его на ваш этаж!
+              </p>
+            </div>
+            <div class="service-type guarantee">
+              <h3 class="heading service-heading services-type-name">Гарантия</h3>
+              <p class="service-type-description description">
+                Если купленный у нас товар поломается или заискрит, <br>
+                а также в случае пожара, спровоцированного его возгоранием,
+                <br>вы всегда можете быть уверены в нашей гарантии. <br>
+                Мы обменяем сгоревший товар на новый. <br>
+                Дом уж восстановите как-нибудь сами.
+              </p>
+              </div>
+            <div class="service-type credit">
+              <h3 class="heading service-heading services-type-name">Кредит</h3>
+              <p class="service-type-description description">
+                Залезть в долговую яму стало проще!<br>
+                Кредитные консультанты придут вам на помощь.
+              </p>
+              <a class="credit-link red-and-white" href="blank.html">Отправить заявку</a>
+            </div>
+          </div>
+        </div>
       </section>
       <div class="contacts container">
         <!--<h2>Адрес и контакты</h2>-->
@@ -283,44 +297,48 @@
       <div class="footer-light">
         <div class="container">
           <div class="footer-navigation">
-            <a class="logo footer-logo">
-              <img src="img/logo-technomart.svg" width="137" height="22" alt="Логотип магазина Техномарт">
-            </a>
-            <ul class="footer-list clear-list">
-              <li>
-                <a class="footer-link underline" href="blank.html">Компания</class=a>
-              </li>
-              <li>
-                <a class="footer-link underline" href="blank.html">Новости</a>
-              </li>
-              <li>
-                <a class="footer-link underline" href="catalog.html">Каталог</a>
-              </li>
-              <li>
-                <a class="footer-link underline" href="blank.html">Доставка</a>
-              </li>
-              <li>
-                <a class="footer-link underline" href="blank.html">Контакты</a>
-              </li>
-            </ul>
-            <address class="footer-address">
-              г. Санкт-Петербург, наб. Реки Карповки, 5 лит П<br>
-              <a class="footer-phone" href="tel:78005558628">+7 (800) 555-86-28</a>
-            </address>
-            <ul class="special-list clear-list">
-              <li>
-                <a class="special-list-item gold underline" href="blank.html">Материалы</a>
-              </li>
-              <li>
-                <a class="special-list-item gold underline" href="blank.html">Техника</a>
-              </li>
-              <li>
-                <a class="special-list-item gold underline" href="blank.html">Инструмент</a>
-              </li>
-              <li>
-                <a class="special-list-item gold underline" href="blank.html">Спецпредложения</a>
-              </li>
-            </ul>
+            <div class="logo-block">
+              <a class="logo footer-logo">
+                <img src="img/logo-technomart.svg" width="137" height="22" alt="Логотип магазина Техномарт">
+              </a>
+              <address class="footer-address">
+                г. Санкт-Петербург, наб. Реки Карповки, 5 лит П<br>
+                <a class="footer-phone" href="tel:78005558628">+7 (800) 555-86-28</a>
+              </address>
+            </div>
+            <div class="footer-list-block">
+              <ul class="footer-list clear-list">
+                <li class="footer-item">
+                  <a class="footer-link underline" href="blank.html">Компания</class=a>
+                </li>
+                <li class="footer-item">
+                  <a class="footer-link underline" href="blank.html">Новости</a>
+                </li>
+                <li class="footer-item">
+                  <a class="footer-link underline" href="catalog.html">Каталог</a>
+                </li>
+                <li class="footer-item">
+                  <a class="footer-link underline" href="blank.html">Доставка</a>
+                </li>
+                <li class="footer-item">
+                  <a class="footer-link underline" href="blank.html">Контакты</a>
+                </li>
+              </ul>
+              <ul class="special-list clear-list">
+                <li class="special-item">
+                  <a class="special-list-item gold underline" href="blank.html">Материалы</a>
+                </li>
+                <li class="special-item">
+                  <a class="special-list-item gold underline" href="blank.html">Техника</a>
+                </li>
+                <li class="special-item">
+                  <a class="special-list-item gold underline" href="blank.html">Инструмент</a>
+                </li>
+                <li class="special-item">
+                  <a class="special-list-item gold underline" href="blank.html">Спецпредложения</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
